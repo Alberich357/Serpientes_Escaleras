@@ -1,9 +1,16 @@
-class Sepientes_Escaleras{
-    constructor()
-    Board()
-    
-    Dice(){
-        return Math.floor( Math.random()*6 + 1);
-      }
-    Players()
+class playerTest{
+    constructor(){
+        this.player = 0;
+    }
+
+    position(){
+        return this.player
+    }
+    addPosition(position){
+        this.player += position;
+    }
+    newPosition(position){
+        this.player = position;
+    }
 }
+
