@@ -47,5 +47,26 @@ class Board{
         let dice = Math.floor(Math.random()*6)+1;
         return dice
     }
+    match(){
+        let player1 = new playerTest();
+        let player2 = new playerTest();
+
+        while(player1.position()<100 && player2.position()<100){
+            player1.addPosition(this.dice());
+            player1.newPosition(this.newBoard[player1.position()]);
+            console.log(player1.position());
+            player2.addPosition(this.dice());
+            player2.newPosition(this.newBoard[player2.position()]);
+            console.log(player2.position());
+        }
+
+        if(player1.position() > player2.position()){
+            return "player1 WINS!"
+        }
+        else{
+            return "player2 WINS!"
+        }
+    }
 }
+new Board;
 
