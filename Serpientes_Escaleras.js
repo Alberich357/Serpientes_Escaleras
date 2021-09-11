@@ -29,6 +29,7 @@ class Board{
          this.newBoard[88] = 51;
          this.newBoard[97] = 61;
          this.newBoard[87] = 85;
+         this.newBoard[30] = 26;
          
         //Stairs 
         this.newBoard[3] = 10;
@@ -38,6 +39,7 @@ class Board{
         this.newBoard[59] = 83;
         this.newBoard[67] = 77;
         this.newBoard[70] = 89;
+        this.newBoard[20] = 40;
         
         console.log(this.match());
 
